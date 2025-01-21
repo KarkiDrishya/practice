@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <p>Rock paper Scissors</p><br><br>
+
+    <button class="rock" onclick="computer()
+    let result='';
+    if(computermove==='rock')
+    {
+        result = 'Draw';
+    }
+    else if(computermove==='scissor')
+    {
+        result = 'You win';
+    }
+    else if(computermove==='paper')
+    {
+        result = 'You lose';
+    }
+
+    console.log(`You chose rock. Computer chose ${computermove}. ${result}`);
+    alert(`You chose rock. Computer chose ${computermove}. ${result}`);
+
+    "> Rock</button><br><br>
+
+    <button class="scissor" onclick="computer()
+    
+    let result='';
+    if(computermove==='rock')
+    {
+        result = 'You Lose';
+    }
+    else if(computermove==='scissor')
+    {
+        result = 'Draw';
+    }
+    else if(computermove==='paper')
+    {
+        result = 'You Win';
+    }
+
+    console.log(`You chose Scissor. Computer chose ${computermove}. ${result}`);
+    alert(`You chose Scissor. Computer chose ${computermove}. ${result}`);
+
+    "> Scissor</button><br><br>
+
+    <button class="paper" onclick="computer()
+    
+    let result='';
+    if(computermove==='rock')
+    {
+        result = 'You Win';
+    }
+    else if(computermove==='scissor')
+    {
+        result = 'You Lose';
+    }
+    else if(computermove==='paper')
+    {
+        result = 'Draw';
+    }
+
+    console.log(`You chose Paper. Computer chose ${computermove}. ${result}`);
+    alert(`You chose Paper. Computer chose ${computermove}. ${result}`);
+
+    "> Paper</button><br><br>
+
+
+
+    
+</body>
+<script>
+    let computermove ='';
+    function computer()
+    {
+       let random = Math.random();
+       if(random>0 && random <=1/3)
+       {
+        computermove='rock';
+       }
+       else if(random>1/3 && random <=2/3)
+       {
+        computermove='paper';
+       }
+       else if(random>2/3 && random <=1)
+       {
+        computermove ='scissor';
+       }
+    }
+</script>
+</html>
